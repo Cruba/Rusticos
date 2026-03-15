@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pacifico&display=swap');
+
+:root{
+/* C O L O R E S */
+    --negro: #000000;
+    --blanco: #FFF;
+    --semiblanco: #f1f1f1;
+    --color-fondo: #011627;
+
+/* F U E N T E S */
+    --fuente_titulos:"Oswald", sans-serif;
+    --fuente_general: "Nunito", sans-serif;
+    --fuente_cruba: "Pacifico", cursive;
+}
+
+/* G l o b a l e s */
+
+html{
+    font-size: 62.25%;
+    box-sizing: border-box;
+    font-family: var(--fuente_general);
+}
+
+body{
+font-size: 16px;
+
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+ }
+
+ h1,h2,h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 4rem;
+    font-family: var(--fuente_titulos);
+    color: var(--blanco);
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+/* G e n e r a l e s */
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.indice{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 0 5rem;
+}
+
+.indice_logo{
+    width: 10rem;
+    filter: grayscale(100%) ;
+
+}
+
+.fondo{
+    background-image: url("../img/fondo.jpg");
+    height: 100rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.indice_elementos{
+display: flex;
+gap: 3rem;
+}
+
+.indice_elementos-enalce{
+
+    font-family: var(--fuente_titulos);
+    text-transform: uppercase;
+    color: var(--blanco);
+    padding: 3rem 2rem;
+
+}
+
+.indice_elementos-enalce:hover{
+    color: var(--negro);
+    background-color: #f1f1f1;
+    transition: .4s;
+
+}
+
+/* .indice_elementos-enalce::after{
+    content: "";
+    height: 20%;
+    color: var(--blanco);
+      border-right: .2rem solid var(--blanco);
+
+} */
+
+.activo{
+    color: var(--negro);
+    background-color: #f1f1f1;
+}
+
+.bienvenido{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 100%;
+    padding-left:15rem;
+}
+
+.titulo{
+    transition: background-color 1s ease;
+}
+
+.titulo:hover{
+    background-color: var(--negro);
+}
+
+.titulo_bienvenida{
+    font-size: 20rem;
+    color: var(--blanco);
+    text-align: end;
+    font-family: var(--fuente_titulos);
+    padding: 0 2rem;
+    
+}
+
+.titulo_parrafo{
+    color: var(--blanco);
+    text-align: end;
+    padding: 1rem;
+    
+    
+}
